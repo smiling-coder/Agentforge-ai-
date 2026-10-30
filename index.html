@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgentForge AI — Build. Think. Act. Verify. Evolve.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="AgentForge AI logo" width="44" height="44">
+    <div><h1>AgentForge AI</h1><p class="tag">Build. Think. Act. Verify. Evolve.</p></div>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Give the agent a goal</h2>
+      <div class="row">
+        <input id="goal" placeholder="e.g. calculate 12*7 and write a note and fetch https://example.com">
+        <button id="runBtn">Run Agent</button>
+      </div>
+      <p class="hint">Try:
+        <a href="#" class="ex">calculate (45+15)*3 and count words in this sentence</a> ·
+        <a href="#" class="ex">simulate unstable failure</a> ·
+        <a href="#" class="ex">write a note about hackathon, then delete note.txt</a>
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Live Execution Monitor</h2>
+      <div id="timeline"><p class="muted">No run yet.</p></div>
+    </section>
+
+    <div class="grid">
+      <section class="panel">
+        <h2>Performance Analytics</h2>
+        <div id="stats" class="stats"></div>
+        <ul id="recent" class="list"></ul>
+      </section>
+      <section class="panel">
+        <h2>Audit Ledger <button id="verifyBtn" class="small">Verify integrity</button></h2>
+        <p id="chain" class="muted">Hash-chained, tamper-evident.</p>
+        <ul id="audit" class="list mono"></ul>
+      </section>
+      <section class="panel">
+        <h2>Persistent Memory</h2>
+        <ul id="memory" class="list"></ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>AgentForge AI · Hackathon build · Agents act only through permitted, audited tools.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
